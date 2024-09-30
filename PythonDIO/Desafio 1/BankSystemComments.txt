@@ -1,0 +1,19 @@
+Explicação dos Comentários:
+
+1. Inicialização das variáveis: Aqui definimos as variáveis que serão usadas no sistema, como o saldo, limite para saques, e o extrato.
+
+2. Menu de opções: Definimos as opções que o usuário pode escolher para interagir com o sistema (Depositar, Sacar, Extrato, Sair).
+
+3. Loop principal (while True): Este loop mantém o sistema ativo até que o usuário escolha sair.
+
+4. Depósito: Verificamos se o valor é positivo antes de somar ao saldo e registrar no extrato.
+
+5. Saque: Há várias verificações antes de permitir o saque: se o valor é maior que o saldo, se excede o limite de saque ou se já foram
+feitos 3 saques no dia. Caso passe nas verificações, o valor é subtraído do saldo e registrado no extrato.
+
+6. Extrato: Mostra todas as movimentações e o saldo atual. Se não houver movimentações, uma mensagem específica é exibida.
+
+7. Sair do sistema: O sistema é encerrado quando o usuário escolhe a opção "4".
+
+8. Opção inválida: Se o usuário digitar uma opção que não está no menu, uma mensagem é exibida para tentar novamente.
+
