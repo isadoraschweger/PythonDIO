@@ -1,0 +1,13 @@
+Explicação das Modificações:
+
+1. Importação da biblioteca datetime:
+Utilizamos from datetime import datetime para trabalhar com data e hora no sistema.
+
+2. Controle de transações diárias:
+Adicionei a variável transacoes_dia para contar o número de transações realizadas no dia.
+Se o número de transações atingir o limite (LIMITE_TRANSACOES = 10), o sistema impede novas transações e informa ao usuário.
+
+3. Data e Hora no Extrato:
+Para cada transação, obtemos a data e hora com datetime.now().strftime("%d/%m/%Y %H:%M:%S") e armazenamos essa informação no extrato,
+para que o histórico seja mais detalhado.
+

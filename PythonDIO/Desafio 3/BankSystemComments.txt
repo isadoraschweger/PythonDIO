@@ -1,0 +1,41 @@
+Explicação das Funções:
+
+1. cadastrar_usuario: Recebe as informações do usuário (nome, data de nascimento, CPF e endereço) e verifica se já existe um usuário
+com o mesmo CPF. Se não houver duplicidade, adiciona o usuário à lista usuarios.
+
+2. cadastrar_conta: Recebe o CPF do usuário e cria uma conta bancária vinculada ao usuário, incrementando o número da conta
+sequencialmente. A conta é associada à agência fixa "0001".
+
+3. depositar: Recebe a posição (número da conta) e o valor do depósito. Se o valor for válido, ele é adicionado ao saldo da conta e
+registrado no extrato.
+
+4. sacar: Recebe o nome do usuário e o valor do saque. Se o usuário for encontrado e as condições de saque forem atendidas (saldo
+suficiente, valor permitido, e limite de saques), o saque é realizado e registrado no extrato.
+
+5. extrato: Pode exibir o extrato da conta de duas formas:
+
+Por número da conta (posição).
+Pelo nome do titular da conta. Exibe o histórico de transações e o saldo atual da conta.
+
+6. listar_usuarios: Exibe todos os usuários cadastrados (função auxiliar para testes).
+
+7. listar_contas: Exibe todas as contas bancárias cadastradas, junto com seus titulares (função auxiliar para testes).
+
+Exemplo de uso:
+
+# Cadastrar usuários
+cadastrar_usuario("Isadora Schweger", "15/03/1990", 12345678900, "Rua ABC, 100 - Centro - Curitiba/PR")
+cadastrar_usuario("João Silva", "12/05/1985", 98765432100, "Rua XYZ, 200 - Centro - São Paulo/SP")
+
+# Cadastrar contas
+cadastrar_conta(12345678900)
+cadastrar_conta(98765432100)
+
+# Realizar operações
+depositar(1, 1000)  # Depósito na conta 1
+sacar("Isadora Schweger", 200)  # Saque pelo nome
+extrato(nome="Isadora Schweger")  # Extrato por nome
+
+# Listar usuários e contas
+listar_usuarios()
+listar_contas()
