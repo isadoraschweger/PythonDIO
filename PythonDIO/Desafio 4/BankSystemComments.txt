@@ -1,0 +1,11 @@
+Mudanças principais:
+
+1. Classe Cliente: Representa os dados de um cliente (nome, CPF, data de nascimento, e endereço).
+
+2. Classe ContaBancaria: Representa uma conta bancária associada a um cliente, com os dados da agência, número da conta, saldo,
+extrato e número de saques.
+
+3. Classe OperacaoBancaria: Implementa métodos estáticos para depositar, sacar e exibir o extrato de uma conta.
+
+4. Separação de responsabilidade: Cada operação bancária agora está associada a uma conta bancária através de métodos na classe
+OperacaoBancaria.
